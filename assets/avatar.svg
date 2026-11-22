@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+<title id="title">Temsili avatar</title><desc id="desc">Gerçek kişiyi betimlemeyen, soyut portre çizimi</desc>
+<rect width="480" height="480" rx="48" fill="#dce9df"/>
+<circle cx="240" cy="212" r="112" fill="#a74920"/>
+<path d="M66 448c17-103 79-153 174-153s157 50 174 153" fill="#1f5b49"/>
+<path d="M161 208c0-51 34-88 79-88 43 0 78 37 78 88 0 50-34 91-78 91-45 0-79-41-79-91z" fill="#f3f1e8"/>
+<path d="M170 199c12-59 43-87 81-87 31 0 57 17 71 50-15-7-30-10-44-10-39 0-71 17-108 47z" fill="#17372f"/>
+<circle cx="211" cy="215" r="6" fill="#17372f"/><circle cx="270" cy="215" r="6" fill="#17372f"/>
+<path d="M218 253c14 12 30 12 44 0" fill="none" stroke="#17372f" stroke-width="7" stroke-linecap="round"/>
+<path d="M132 448c18-63 58-98 108-98 52 0 93 35 110 98" fill="#e3a15e"/>
+</svg>
