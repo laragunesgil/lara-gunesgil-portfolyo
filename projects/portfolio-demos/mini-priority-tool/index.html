@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Örnek toplumsal sorunları basit ölçütlerle karşılaştıran yerel demo.">
+<title>Sorunları Önceliklendirme — Yeni Demo</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head><body>
+<a class="skip-link" href="#icerik">İçeriğe atla</a>
+<header class="site-header"><p class="eyebrow">Portfolyo için hazırlanmış yeni demo; ders ödevi değildir</p><h1>Sorunları Önceliklendirme</h1><p class="lede">Örnek sorunları üç ölçüte göre puanla. Sonuç, yalnızca düşünmeye yardımcı olan basit bir demo puanıdır.</p></header>
+<main id="icerik" tabindex="-1">
+<section class="panel" aria-labelledby="form-baslik"><h2 id="form-baslik">Bir örnek sorun ekle</h2>
+<form id="sorun-formu">
+<div class="field full"><label for="sorun-adi">Sorun adı</label><input id="sorun-adi" maxlength="70" required></div>
+<div class="field"><label for="etki">Algılanan etki (1–5)</label><select id="etki"><option value="1">1 — düşük</option><option value="2">2</option><option value="3" selected>3 — orta</option><option value="4">4</option><option value="5">5 — yüksek</option></select></div>
+<div class="field"><label for="kapsam">Etkilenen kişi/grup kapsamı (1–5)</label><select id="kapsam"><option value="1">1 — düşük</option><option value="2">2</option><option value="3" selected>3 — orta</option><option value="4">4</option><option value="5">5 — yüksek</option></select></div>
+<div class="field"><label for="aciliyet">Aciliyet (1–5)</label><select id="aciliyet"><option value="1">1 — düşük</option><option value="2">2</option><option value="3" selected>3 — orta</option><option value="4">4</option><option value="5">5 — yüksek</option></select></div>
+<button type="submit">Karşılaştırmaya ekle</button></form>
+<p class="formula">Demo kuralı: etki × 3 + kapsam × 2 + aciliyet. En yüksek puan 30’dur. Bu hesap doğrulanmış bir araştırma ölçeği değildir.</p></section>
+<section aria-labelledby="liste-baslik"><div class="section-heading"><h2 id="liste-baslik">Geçici karşılaştırma</h2><button id="temizle" class="secondary" type="button">Listeyi temizle</button></div>
+<p id="durum" class="status" aria-live="polite">Henüz sorun eklenmedi.</p><ol id="sorun-listesi" class="priority-list"></ol></section>
+<p class="note">Liste yalnızca sayfa açıkken bellekte tutulur; sayfayı yenileyince silinir. Hiçbir bilgi gönderilmez veya kalıcı olarak kaydedilmez.</p>
+</main>
+<footer><a href="../../../index.html">Portfolyo ana sayfasına dön</a><span>Bu araç karar vermez; yalnızca basit karşılaştırma örneği sunar.</span></footer>
+</body></html>
