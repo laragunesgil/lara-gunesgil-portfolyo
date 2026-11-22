@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lara Güneşgil'in doğrulanmış GEP1316 projesi ve portfolyo için hazırlanmış yeni demoları.">
+  <title>Projeler | Lara Güneşgil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Lara Güneşgil — ana sayfa">LG</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menü</button>
+      <nav class="site-nav" id="site-nav" aria-label="Ana gezinme">
+        <a href="index.html">Ana sayfa</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="projeler.html" aria-current="page">Projeler</a>
+        <a href="iletisim.html">İletişim</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Koyu tema</button>
+    </div>
+  </header>
+
+  <main id="icerik" class="container page-main" tabindex="-1">
+    <header class="page-heading">
+      <p class="eyebrow">Çalışmalar</p>
+      <h1>Projeler</h1>
+      <p class="page-lede">Doğrulanmış ders projesi ve portfolyo için bu çalışma sırasında oluşturulan yeni demolar.</p>
+    </header>
+
+    <section class="filter-panel" aria-label="Proje arama ve filtreleme">
+      <div class="filter-field">
+        <label for="project-search">Projelerde ara</label>
+        <input id="project-search" type="search" autocomplete="off" placeholder="Başlık, teknoloji veya konu">
+      </div>
+      <div class="filter-field">
+        <label for="project-type">Proje türü</label>
+        <select id="project-type">
+          <option value="all">Tüm projeler</option>
+          <option value="coursework">Ders projesi</option>
+          <option value="demo">Yeni portfolyo demosu</option>
+        </select>
+      </div>
+      <p class="filter-status" id="project-count" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="coursework-heading">
+      <h2 id="coursework-heading" class="section-title">GEP1316 ders çalışmaları</h2>
+      <div class="project-grid">
+        <article class="project-card" id="haber-izleyicisi" data-project-card data-category="coursework" data-search="toplumsal sorun haber izleyicisi python csv sosyoloji kategori">
+          <img class="project-image" src="assets/project-news-tracker.svg" alt="Koyu yeşil zemin üzerinde kategori raporunu temsil eden çizim; gerçek ekran görüntüsü değildir.">
+          <div class="project-body">
+            <p class="project-type">GEP1316 · Ara Değerlendirme Ödevi 1</p>
+            <h3>Toplumsal Sorun Haber İzleyicisi</h3>
+            <p>Python komut satırı uygulaması; haber başlığı, kaynak adı, yayın tarihi ve kategori bilgisini alır. Kayıtları CSV dosyasına ekler, yinelenen kayıtları denetler ve beş kategori için sayım raporu oluşturur. Haberleri internetten otomatik çekmez.</p>
+            <ul class="tech-list" aria-label="Kullanılan teknolojiler">
+              <li>Python 3</li><li>CSV</li><li>Standart kütüphane</li>
+            </ul>
+            <p class="learning-draft"><strong>“Ne öğrendim?” taslağı:</strong> Kullanıcı girdilerini doğrulamayı, CSV kayıtlarını ve kategori raporlarını uygulamayı gösterir. Bu cümle Lara'nın onayladığı kişisel ifade değildir.</p>
+            <a class="text-link" href="https://github.com/laragunesgil/toplumsal-sorun-haber-izleyicisi-">GitHub deposunu aç</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-card data-category="coursework" data-search="saha görüşmesi notları tanımlayıcı bilgi kontrolü evet hayır sözde kod akış şeması gizlilik">
+          <img class="project-image" src="assets/project-identifier-checklist.svg" alt="Ad, telefon ve adres için evet veya hayır seçeneklerini ve arşiv kararını temsil eden çizim.">
+          <div class="project-body">
+            <p class="project-type">GEP1316 · Haftalık Ödev 1</p>
+            <h3>Saha Görüşmesi Notları İçin Tanımlayıcı Bilgi Kontrolü</h3>
+            <p>Her kayıt için gerçek görüşme metni yerine rastgele bir kod ve ad, telefon, adres alanlarında evet/hayır yanıtları kullanır. Herhangi biri “evet” ise tanımlayıcı temizliği gerektiğini; üçü de “hayır” ise kaydın arşive hazır olduğunu belirtir. Metnin kendisini taramaz.</p>
+            <ul class="tech-list" aria-label="Çalışmada kullanılan yöntemler"><li>Sözde kod</li><li>Karar yapıları</li><li>Döngü</li><li>Akış şeması</li></ul>
+            <p class="learning-draft"><strong>“Ne öğrendim?” taslağı:</strong> Bir problemi küçük karar adımlarına ayırmayı, veri toplamayı sınırlamayı ve otomatik kontrolün sınırlarını açıklamayı gösterir. Bu cümle kişisel ifade taslağıdır.</p>
+            <a class="text-link" href="projects/coursework/identifier-checklist.html">Çalışma özetini aç</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="yeni-demolar" class="section-block" aria-labelledby="demo-heading">
+      <h2 id="demo-heading" class="section-title">Yeni portfolyo demoları</h2>
+      <p class="section-intro-text">Aşağıdaki üç çalışma bu portfolyo için hazırlanmış yeni demodur; önceki ders ödevi olarak sunulmaz.</p>
+      <div class="project-grid">
+        <article class="project-card" data-project-card data-category="demo" data-search="toplumsal sorun kataloğu html css javascript arama filtre">
+          <img class="project-image" src="assets/demo-issue-catalog.svg" alt="Kurgusal sorun kategorilerini gösteren üç kart çizimi.">
+          <div class="project-body">
+            <p class="project-type demo-label">Portfolyo için hazırlanmış yeni demo; ders ödevi değildir</p>
+            <h3>Toplumsal Sorun Kataloğu</h3>
+            <p>Kurgusal örnek kayıtlar üzerinde başlık araması ve kategori filtresi sunan tarayıcı demosu.</p>
+            <ul class="tech-list" aria-label="Kullanılan teknolojiler"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <p class="learning-draft"><strong>“Ne öğrendim?” taslağı:</strong> Arama ve filtreleme kurmayı, sonuçları güvenli DOM işlemleriyle güncellemeyi gösterir.</p>
+            <a class="text-link" href="projects/portfolio-demos/mini-issue-catalog/index.html">Demoyu aç</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-card data-category="demo" data-search="sorun önceliklendirme etki kapsam aciliyet html css javascript">
+          <img class="project-image" src="assets/demo-priority-tool.svg" alt="Üç ölçüt ve örnek puan çubuklarını gösteren çizim.">
+          <div class="project-body">
+            <p class="project-type demo-label">Portfolyo için hazırlanmış yeni demo; ders ödevi değildir</p>
+            <h3>Sorunları Önceliklendirme</h3>
+            <p>Örnek sorunları etki, kapsam ve aciliyet puanlarıyla sıralayan basit bir araç. Puan modeli doğrulanmış araştırma ölçeği değildir.</p>
+            <ul class="tech-list" aria-label="Kullanılan teknolojiler"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <p class="learning-draft"><strong>“Ne öğrendim?” taslağı:</strong> Form girdilerini puanlamaya ve sonuçları sıralamaya dönüştürmeyi gösterir.</p>
+            <a class="text-link" href="projects/portfolio-demos/mini-priority-tool/index.html">Demoyu aç</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-card data-category="demo" data-search="araştırma sorusu taslağı sosyoloji tema topluluk html css javascript">
+          <img class="project-image" src="assets/demo-question-builder.svg" alt="Tema ve odak seçimleriyle araştırma sorusu metni oluşturan form çizimi.">
+          <div class="project-body">
+            <p class="project-type demo-label">Portfolyo için hazırlanmış yeni demo; ders ödevi değildir</p>
+            <h3>Araştırma Sorusu Taslağı</h3>
+            <p>Seçilen sosyoloji teması, inceleme odağı ve toplulukla başlangıç sorusu üretir; araştırma tasarımının yerine geçmez.</p>
+            <ul class="tech-list" aria-label="Kullanılan teknolojiler"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <p class="learning-draft"><strong>“Ne öğrendim?” taslağı:</strong> Seçim alanlarını birleştirerek metin çıktısı üretmeyi ve girdileri güvenli göstermeyi anlatır.</p>
+            <a class="text-link" href="projects/portfolio-demos/mini-question-builder/index.html">Demoyu aç</a>
+          </div>
+        </article>
+      </div>
+      <p id="no-projects" class="empty-state" hidden>Bu arama ve filtreyle eşleşen proje yok.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Lara Güneşgil · Sosyoloji</p>
+      <a href="https://github.com/laragunesgil">GitHub profili</a>
+    </div>
+  </footer>
+</body>
+</html>
